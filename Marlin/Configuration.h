@@ -745,7 +745,7 @@
  * Override with M92 102.50 Y82.00 Z400.00 E12691.64
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 102.5, 82, 400, 12691.64 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 102.5, 82, 400, 1813.1 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1317,8 +1317,8 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 15              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define MESH_INSET 30              // Set Mesh bounds as an inset region of the bed
+  #define GRID_MAX_POINTS_X 9      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle
